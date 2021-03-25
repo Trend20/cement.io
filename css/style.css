@@ -119,7 +119,6 @@
     }
     /* end of header styles */
     /* slider */
-    /* Slideshow container */
     
     .slideshow-container {
         width: 100%;
@@ -163,6 +162,7 @@
     
     .text p {
         margin-top: 20px;
+        text-align: center;
         font-size: 1.5rem;
         width: 50%;
         justify-content: center;
@@ -214,5 +214,74 @@
         border-radius: 50%;
         display: inline-block;
         transition: background-color 0.6s ease;
+    }
+    
+    @media screen and (max-width: 991px) {
+        .mySlides {
+            display: none;
+            width: 100%;
+            position: relative;
+        }
+        .mySlides img {
+            max-width: 100%;
+            height: 500px;
+            transform: scaleY(1);
+            filter: opacity(1) drop-shadow(0 0 0 #000);
+        }
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 0%;
+            top: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+        .text h1 {
+            font-size: 2rem;
+            margin-top: 100px;
+            width: 100%;
+        }
+        .text p {
+            font-size: 1rem;
+            width: 70%;
+            text-align: center;
+        }
+        .slider-btns {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .slider-btns button {
+            margin-bottom: 50px;
+        }
+        #about {
+            background: var(--primaryColor);
+        }
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
     }
     /* end of slider */
