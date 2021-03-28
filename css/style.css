@@ -314,7 +314,7 @@
     .s-heading p {
         margin-top: 10px;
         font-size: 1.5rem;
-        width: 80%;
+        width: 100%;
         font-weight: 100;
     }
     
@@ -335,6 +335,7 @@
     .card-container img {
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
+        height: 200px;
     }
     
     .card-container h3 {
@@ -349,7 +350,7 @@
         padding-left: 20px;
         margin-top: 30px;
         font-size: .9rem;
-        width: 70%;
+        width: 100%;
         opacity: .6;
     }
     
@@ -410,6 +411,20 @@
             grid-gap: 20px;
             margin-top: 50px;
             justify-content: center;
+        }
+        .card-container h3 {
+            padding: 10px;
+            background: var(--primaryColor);
+            padding-left: 20px;
+            text-transform: capitalize;
+        }
+        .card-container p {
+            padding: 10px;
+            padding-left: 20px;
+            margin-top: 30px;
+            font-size: .9rem;
+            width: 100%;
+            opacity: .6;
         }
     }
     /* end of services styles */
