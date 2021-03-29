@@ -19,6 +19,10 @@
         scroll-behavior: smooth;
     }
     
+    hr {
+        color: #fff;
+    }
+    
     .container {
         display: flex;
         flex-direction: column;
@@ -428,3 +432,113 @@
         }
     }
     /* end of services styles */
+    /* choice */
+    
+    #choice {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background: rgb(241, 241, 241);
+    }
+    
+    #choice>img {
+        display: flex;
+        height: 500px;
+        width: 40%;
+        transform: skew(15deg) scale(1.2, 1);
+        position: absolute;
+        left: -8%;
+    }
+    
+    .description {
+        display: flex;
+        flex-direction: column;
+        margin-left: 500px;
+        padding: 70px;
+        width: 80%;
+    }
+    
+    .description h1 {
+        font-size: 3rem;
+    }
+    
+    .description p {
+        margin-top: 30px;
+        font-size: 1.2rem;
+        font-weight: 300;
+        width: 100%;
+    }
+    
+    .sub-demains {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .s-contents {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .s-contents img {
+        display: flex;
+    }
+    
+    .s-contents h5 {
+        display: flex;
+        font-size: 1.2rem;
+        width: 80%;
+    }
+    
+    .communication {
+        display: flex;
+        flex-direction: column;
+        background: var(--primaryColor);
+        width: 40%;
+        padding: 10px 0px;
+        color: #fff;
+    }
+    
+    .phone,
+    .mail {
+        margin: 70px auto;
+    }
+    
+    .phone>p,
+    .mail>p {
+        font-size: 1rem;
+        font-weight: 500;
+        transform: scaleY(1.5);
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .phone>p i,
+    .mail>p i {
+        margin-right: 10px;
+    }
+    
+    .social-networks {
+        display: flex;
+        margin: 40px auto;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 30px;
+    }
+    
+    .social-networks i {
+        background: #fff;
+        padding: 20px;
+        border: none;
+        border-radius: 50%;
+        color: var(--primaryColor);
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    
+    .social-networks i:hover {
+        color: #000;
+    }
+    /* end of choice style */
