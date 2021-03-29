@@ -26,8 +26,18 @@ function showContents() {
     hiddenDivs.forEach((element) => {
         if (element.style.display === "none") {
             element.style.display = "block"
+
         } else {
             element.style.display = "none"
         }
     });
 }
+
+// select all the contents by their IDS
+const quarryContent = document.getElementById('quarry-content');
+const clinkContent = document.getElementById('clink-content');
+const materialContent = document.getElementById('material-content');
+
+materialContent.addEventListener('click', showContents);
+quarryContent.addEventListener('click', showContents);
+clinkContent.addEventListener('click', showContents);

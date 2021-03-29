@@ -695,7 +695,7 @@
     .video i {
         position: absolute;
         left: 50%;
-        top: 20%;
+        top: 40%;
         background: var(--primaryColor);
         padding: 10px;
         font-size: 1.5rem;
