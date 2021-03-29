@@ -658,3 +658,58 @@
         transform: rotate(360deg);
     }
     /* end of progres styles */
+    /* services overview */
+    
+    .services-overview {
+        display: flex;
+        padding: 100px 30px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .video {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-left: 30px;
+    }
+    
+    .video:hover {
+        color: #fff;
+    }
+    
+    .video img {
+        display: flexbox;
+        filter: opacity(.5) drop-shadow(0 0 0 #000);
+        cursor: pointer;
+        height: 350px;
+        width: 600px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    .video i {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        background: var(--primaryColor);
+        padding: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    
+    .video h3 {
+        background: var(--primaryColor);
+        padding: 20px 80px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 2rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    /* end of services overview styles */
