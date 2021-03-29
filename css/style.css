@@ -544,6 +544,35 @@
     /* end of choice style */
     /* progress bars styles */
     
+    #stats {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        padding: 100px 30px;
+        width: 100%;
+    }
+    
+    .stat-container {
+        /* display: flex; */
+        width: 100%;
+    }
+    
+    .s-description {
+        position: absolute;
+        width: 20%;
+        top: 375%;
+        margin-left: 150px;
+    }
+    
+    .s-description h3 {
+        font-size: 2rem;
+    }
+    
+    .s-description p {
+        transform: scaleY(1.2);
+        margin-top: 10px;
+        font-weight: 300;
+    }
+    
     .progress-circle {
         font-size: 20px;
         margin: 20px;
