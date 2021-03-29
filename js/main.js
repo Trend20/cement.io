@@ -32,12 +32,3 @@ function showContents() {
         }
     });
 }
-
-// select all the contents by their IDS
-const quarryContent = document.getElementById('quarry-content');
-const clinkContent = document.getElementById('clink-content');
-const materialContent = document.getElementById('material-content');
-
-materialContent.addEventListener('click', showContents);
-quarryContent.addEventListener('click', showContents);
-clinkContent.addEventListener('click', showContents);

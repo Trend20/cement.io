@@ -774,7 +774,7 @@
     }
     
     .hidden-contents {
-        /* display: none; */
+        display: none;
         margin-top: 20px;
         position: relative;
         width: 100%;
@@ -792,3 +792,45 @@
         width: 70%;
     }
     /* end of services overview styles */
+    /* hepl style */
+    
+    #help {
+        display: flex;
+        flex-direction: column;
+        padding: 100px;
+        background: url(../assest/img/help.jpg);
+        background-repeat: no-repeat;
+        color: #fff;
+        width: 100%;
+    }
+    
+    #help h3 {
+        font-size: 3rem;
+        width: 65%;
+    }
+    
+    #help-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        padding: 15px;
+        background: var(--primaryColor);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    
+    #help-btn a {
+        display: flex;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 20px;
+        font-size: 500;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    /* end help style */
