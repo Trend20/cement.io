@@ -967,4 +967,69 @@
     }
     /* end of gallery styles */
     /* team section styles */
+    
+    #team {
+        display: flex;
+        width: 100%;
+        padding: 100px 70px;
+        flex-direction: column;
+    }
+    
+    #team h1 {
+        font-size: 3rem;
+        text-transform: capitalize;
+        display: flex;
+    }
+    
+    #team p {
+        display: flex;
+        margin-top: 10px;
+        font-size: .9rem;
+        font-weight: 300;
+    }
+    
+    .team-members {
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+        margin-top: 50px;
+        grid-gap: 30px;
+    }
+    
+    .member-container {
+        display: flex;
+        margin-top: 30px;
+        background: rgb(231, 230, 230);
+    }
+    
+    .image {
+        display: flex;
+    }
+    
+    .image img {
+        display: flex;
+    }
+    
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .details h3 {
+        font-size: 1.2rem;
+        margin-left: 70px;
+        margin-top: 50px;
+    }
+    
+    .details p {
+        display: flex;
+        margin-left: 70px;
+    }
+    
+    .icons {
+        display: flex;
+        margin-top: 30px;
+        margin-left: 70px;
+        justify-content: space-between;
+        width: 40%;
+    }
     /* end of team scetion styles */
