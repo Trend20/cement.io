@@ -833,6 +833,13 @@
         align-items: center;
         text-decoration: none;
     }
+    
+    #help-btn:hover,
+    #help-btn a:hover {
+        background: #fff;
+        color: var(--primaryColor);
+        border: 1px solid var(--primaryColor);
+    }
     /* end help style *
     
     /* testimonials styles/ */
@@ -924,20 +931,38 @@
     }
     
     #g2 {
-        margin-left: -10px;
+        margin-left: 0px;
         width: 340px;
-        margin-top: 50px;
+        margin-top: 35px;
     }
     
     #g3 {
-        margin-left: -20px;
-        height: 340px;
-        margin-top: 22px;
+        margin-left: 0px;
+        height: 350px;
+        margin-top: 35px;
     }
     
     #g4 {
         height: 350px;
-        width: 320px;
-        margin-left: -10px;
+        width: 305px;
+        margin-top: 38px;
+    }
+    
+    #g5 {
+        height: 370px;
+        margin-top: -110px;
+    }
+    
+    #g6 {
+        margin-top: -10px;
+    }
+    
+    #g7 {
+        height: 260px;
+        margin-top: -3px;
+    }
+    
+    #g8 {
+        height: 260px;
     }
     /* end of gallery styles */
