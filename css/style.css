@@ -1032,4 +1032,8 @@
         justify-content: space-between;
         width: 40%;
     }
+    
+    .icons i:hover {
+        color: var(--primaryColor);
+    }
     /* end of team scetion styles */
