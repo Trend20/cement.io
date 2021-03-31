@@ -1244,3 +1244,62 @@
         background: var(--hoverColor);
     }
     /* end of contact us section */
+    /* end of footer */
+    
+    #footer {
+        display: flex;
+        width: 100%;
+        padding: 100px;
+        justify-content: space-between;
+        align-items: center;
+        background: #000;
+        color: #fff;
+    }
+    
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    
+    .footer-text p {
+        font-size: .9rem;
+        font-weight: 300;
+    }
+    
+    .footer-logo {
+        display: flex;
+        margin-left: -50px;
+    }
+    
+    .footer-logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer-logo a p {
+        color: var(--primaryColor);
+        font-size: .9rem;
+    }
+    
+    .footer-icons {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .footer-icons i {
+        background: #fff;
+        color: var(--primaryColor);
+        padding: 20px;
+        border-radius: 59%;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .footer-icons i:hover {
+        color: #000;
+    }
+    /* end of footer styles */
