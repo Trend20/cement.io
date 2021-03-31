@@ -1039,8 +1039,22 @@
     /* end of team scetion styles */
     /* partners section */
     
+    #partner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: var(--primaryColor);
+        padding: 100px 30px;
+    }
+    
+    #partner h1 {
+        margin: auto;
+        font-size: 3rem;
+        color: #fff;
+    }
+    
     .customer-logos {
-        background-color: #111;
+        margin-top: 50px;
     }
     /* Slider */
     
