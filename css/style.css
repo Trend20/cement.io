@@ -1243,6 +1243,12 @@
     .form-btn:hover {
         background: var(--hoverColor);
     }
+    
+    #map {
+        width: 50%;
+        height: 450px;
+        margin-left: 50px;
+    }
     /* end of contact us section */
     /* end of footer */
     
@@ -1303,3 +1309,37 @@
         color: #000;
     }
     /* end of footer styles */
+    /* chevron styles */
+    
+    #myBtn {
+        display: none;
+        align-items: center;
+        text-align: center;
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        background-color: var(--primaryColor);
+        outline: none;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        z-index: 99;
+        font-size: 1.2rem;
+        color: #fff;
+        padding: 20px;
+        transition: ease .5s;
+        width: 5%;
+    }
+    
+    #myBtn:hover {
+        background-color: rgb(95, 93, 93);
+    }
+    
+    @media screen and (max-width:991px) {
+        #myBtn {
+            padding: 15px;
+            transition: ease .5s;
+            width: 12%;
+        }
+    }
+    /* end of chevron styles */

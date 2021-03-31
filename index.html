@@ -447,6 +447,10 @@
         </footer>
         <!-- end of footer section -->
 
+        <!-- chevron -->
+        <button onclick="topFunction()" id="myBtn"><i class="fas fa-chevron-up"></i></button>
+        <!-- end chevron -->
+
     </div>
 
     <!-- script -->
@@ -484,7 +488,30 @@
 
     <!-- google maps script -->
 
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArlQAJp6OiOxgnoauwaUnseG0jXdL1bwQ&callback=initMap">
+    </script>
 
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const nairobi = {
+                lat: -1.28333,
+                lng: 36.81667
+            };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: nairobi,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: nairobi,
+                map: map,
+            });
+        }
+    </script>
     <!-- end of google maps script -->
 
 
