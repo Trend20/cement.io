@@ -53,3 +53,22 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+// form validation
+
+const form = document.getElementById('form');
+const inputFields = document.querySelectorAll('.input-field');
+
+// loop each input field
+
+inputFields.forEach((field) => {
+    document.querySelector('.form-btn').addEventListener('click', showError);
+    field.appendChild(error);
+});
+
+function showError(event) {
+    event.preventDefault();
+    let error = document.createElement('p');
+    error.innerText = 'Field is required';
+    error.style.color = 'red';
+}
