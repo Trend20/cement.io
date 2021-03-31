@@ -8,7 +8,8 @@
     
      :root {
         --textHoverColor: rgb(5, 65, 143);
-        --primaryColor: rgb(252, 168, 13);
+        --primaryColor: rgb(252, 170, 63);
+        --hoverColor: rgb(241, 145, 19);
     }
     
     body {
@@ -1169,3 +1170,77 @@
         display: none;
     }
     /* end of partner section */
+    /* contact us section */
+    
+    #contact-us {
+        display: flex;
+        padding: 100px 70px;
+        width: 100%;
+    }
+    
+    #form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    .form-heading {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .form-heading h1 {
+        font-size: 3rem;
+    }
+    
+    .form-heading p {
+        margin: 20px 0px;
+        font-size: .9rem;
+        font-weight: 300;
+    }
+    
+    #form input {
+        padding: 20px;
+        border: none;
+        background: rgb(228, 225, 225);
+        font-size: 1rem;
+        outline: none;
+        opacity: .6;
+        margin-top: 5px;
+    }
+    
+    #message {
+        padding: 20px;
+        height: 100px;
+        background: rgb(228, 225, 225);
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        opacity: .6;
+    }
+    
+    .form-btn {
+        margin-top: 10px;
+        width: 60%;
+        padding: 20px;
+        outline: none;
+        border: none;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        transform: scaleX(.5);
+        margin-left: -90px;
+        background: var(--primaryColor);
+        cursor: pointer;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    
+    .form-btn:hover {
+        background: var(--hoverColor);
+    }
+    /* end of contact us section */
