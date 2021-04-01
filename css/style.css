@@ -8,7 +8,7 @@
     
      :root {
         --textHoverColor: rgb(5, 65, 143);
-        --primaryColor: rgb(252, 170, 63);
+        --primaryColor: rgb(255, 160, 35);
         --hoverColor: rgb(241, 145, 19);
     }
     
@@ -354,9 +354,9 @@
     
     .s-heading p {
         margin-top: 10px;
-        font-size: 1.5rem;
-        width: 100%;
-        font-weight: 100;
+        font-size: 1.2rem;
+        width: 80%;
+        font-weight: 300;
     }
     
     .s-cards {
@@ -482,9 +482,10 @@
         display: flex;
         height: 500px;
         width: 40%;
-        transform: skew(15deg) scale(1.2, 1);
+        transform: skew(15deg) scale(1.2, 1.05);
         position: absolute;
         left: -8%;
+        margin-top: 10px;
     }
     
     .description {
@@ -608,6 +609,7 @@
         transform: scaleY(1.2);
         margin-top: 10px;
         font-weight: 300;
+        font-size: .9rem;
     }
     
     .progress-circle {
@@ -1355,7 +1357,7 @@
         position: fixed;
         bottom: 40px;
         right: 30px;
-        background-color: var(--primaryColor);
+        background-color: rgb(241, 173, 82);
         outline: none;
         cursor: pointer;
         border: none;
