@@ -887,14 +887,18 @@
         border: 1px solid #fff;
         color: #fff;
         padding: 20px;
-        font-size: 500;
+        font-size: 1rem;
+        font-weight: 900;
         width: 100%;
         justify-content: center;
         align-items: center;
         text-decoration: none;
     }
     
-    #help-btn:hover,
+    #help-btn:hover {
+        background: #fff;
+    }
+    
     #help-btn a:hover {
         background: #fff;
         color: var(--primaryColor);
