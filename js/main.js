@@ -29,19 +29,40 @@ const firingContent = document.getElementById('firing-content');
 //     div.addEventListener('click', showContents);
 // });
 
-extractDiv.addEventListener('click', showContents);
-prepDiv.addEventListener('click', showContents);
-firingDiv.addEventListener('click', showContents);
+extractDiv.addEventListener('click', showExtractContents);
+prepDiv.addEventListener('click', showPrepContents);
+firingDiv.addEventListener('click', showFiringContents);
 
-function showContents() {
-    hiddenDivs.forEach((element) => {
-        if (element.style.display === "none") {
-            element.style.display = "block"
 
-        } else {
-            element.style.display = "none"
-        }
-    });
+// extract functionality
+function showExtractContents() {
+    if (extractContent.style.display === "none") {
+        extractContent.style.display = "block"
+
+    } else {
+        extractContent.style.display = "none"
+    }
+}
+
+
+// prep functionality
+function showPrepContents() {
+    if (prepContent.style.display === "none") {
+        prepContent.style.display = "block"
+
+    } else {
+        prepContent.style.display = "none"
+    }
+}
+
+// firing content
+function showFiringContents() {
+    if (firingContent.style.display === "none") {
+        firingContent.style.display = "block"
+
+    } else {
+        firingContent.style.display = "none"
+    }
 }
 
 
