@@ -15,12 +15,23 @@ function showSlides() {
 
 // toggle div containers
 
-const containerDivs = document.querySelectorAll('.toggle-div');
-const hiddenDivs = document.querySelectorAll('.hidden-contents');
+// const containerDivs = document.querySelectorAll('.toggle-div');
+const extractDiv = document.getElementById('extraction');
+const firingDiv = document.getElementById('firing');
+const prepDiv = document.getElementById('prep');
+// const hiddenDivs = document.querySelectorAll('.hidden-contents');
 
-containerDivs.forEach((div) => {
-    div.addEventListener('click', showContents);
-});
+// contents
+const extractContent = document.getElementById('extract-content');
+const prepContent = document.getElementById('prep-content');
+const firingContent = document.getElementById('firing-content');
+// containerDivs.forEach((div) => {
+//     div.addEventListener('click', showContents);
+// });
+
+extractDiv.addEventListener('click', showContents);
+prepDiv.addEventListener('click', showContents);
+firingDiv.addEventListener('click', showContents);
 
 function showContents() {
     hiddenDivs.forEach((element) => {
