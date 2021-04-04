@@ -25,6 +25,13 @@ const prepDiv = document.getElementById('prep');
 const extractContent = document.getElementById('extract-content');
 const prepContent = document.getElementById('prep-content');
 const firingContent = document.getElementById('firing-content');
+const toggleChevrons = document.querySelectorAll('.fa-chevron-up');
+
+// loop through the chevrons
+
+let chevron = toggleChevrons.forEach((chevron) => {
+    return chevron;
+});
 // containerDivs.forEach((div) => {
 //     div.addEventListener('click', showContents);
 // });
@@ -38,7 +45,6 @@ firingDiv.addEventListener('click', showFiringContents);
 function showExtractContents() {
     if (extractContent.style.display === "none") {
         extractContent.style.display = "block"
-
     } else {
         extractContent.style.display = "none"
     }

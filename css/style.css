@@ -753,6 +753,7 @@
     
     .video i {
         position: absolute;
+        display: flex;
         left: 50%;
         top: 40%;
         background: var(--primaryColor);
