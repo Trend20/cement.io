@@ -98,7 +98,7 @@
     .dropdown-content {
         display: none;
         position: absolute;
-        min-width: 160px;
+        min-width: 180px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
         background: #fff;
@@ -152,6 +152,10 @@
         font-family: 'Oswald', sans-serif;
     }
     
+    #quote:hover {
+        background: var(--hoverColor);
+    }
+    
     .toggle {
         display: none;
         position: absolute;
@@ -176,13 +180,15 @@
         display: none;
         width: 100%;
         position: relative;
+        background-color: #000;
     }
     
     .mySlides img {
         max-width: 100%;
         height: 700px;
+        opacity: .5;
         transform: scaleY(1.5);
-        filter: opacity(1) drop-shadow(0 0 0 #000);
+        /* filter: opacity(1) drop-shadow(0 0 0 #000); */
     }
     /* Caption text */
     
@@ -209,7 +215,7 @@
     .text p {
         margin-top: 20px;
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         width: 50%;
         justify-content: center;
         align-items: center;
@@ -225,7 +231,7 @@
         margin-top: 30px;
     }
     
-    .slider-btns button {
+    .slider-btns a {
         padding: 20px;
         width: 50%;
         margin-left: 10px;
@@ -234,13 +240,27 @@
         border-radius: 5px;
         font-size: 1rem;
         text-transform: uppercase;
-        font-weight: 700;
+        text-decoration: none;
+        color: #000;
+        font-weight: 400;
         font-family: 'Oswald', sans-serif;
         cursor: pointer;
     }
     
     #about {
         background: var(--primaryColor);
+    }
+    
+    #about:hover {
+        background: var(--hoverColor);
+    }
+    
+    #contact {
+        background: #fff;
+    }
+    
+    #contact:hover {
+        color: var(--primaryColor);
     }
     
     .numbertext {
@@ -475,7 +495,7 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
-        background: rgb(241, 241, 241);
+        background: rgb(236, 235, 235);
     }
     
     #choice>img {
