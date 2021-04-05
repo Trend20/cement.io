@@ -167,6 +167,93 @@
     .toggle i {
         font-size: 1.5rem;
     }
+    
+    @media screen and (max-width:420px) {
+        .container {
+            overflow: hidden;
+        }
+        header {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+        }
+        .logo {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .logo h1 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            width: 100%;
+        }
+        .logo h1:hover {
+            color: var(--textHoverColor);
+        }
+        .logo p {
+            font-size: .5rem;
+            text-transform: uppercase;
+            opacity: 1;
+            font-weight: 300;
+            margin-top: -5px;
+        }
+        nav {
+            display: none;
+            width: 70%;
+            position: absolute;
+            flex-direction: column;
+            top: 20%;
+            left: 2%;
+            z-index: 1;
+            background: #fff;
+            border: 1px solid var(--primaryColor);
+        }
+        nav ul {
+            display: flex;
+            align-items: flex-start;
+            padding: 10px;
+            flex-direction: column;
+            width: 100%;
+        }
+        nav ul li {
+            display: flex;
+            font-size: .6rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            font-size: .6rem;
+            font-weight: 400;
+        }
+        nav ul li a:hover {
+            color: var(--primaryColor);
+        }
+        #quote {
+            width: 50%;
+            font-size: .6rem;
+            font-family: 'Oswald', sans-serif;
+            margin-bottom: 20px;
+        }
+        #quote:hover {
+            background: var(--hoverColor);
+        }
+        .toggle {
+            display: block;
+            position: absolute;
+            top: 10%;
+            right: 30%;
+            background: #000;
+        }
+        .toggle i {
+            font-size: 1rem;
+            color: #fff;
+            padding: 10px;
+        }
+    }
     /* end of header styles */
     /* slider */
     
