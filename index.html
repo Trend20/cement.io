@@ -34,7 +34,7 @@
 
             <nav>
                 <ul>
-                    <li class="active"><a href="#services">services</a></li>
+                    <li><a href="#services" class="active">services</a></li>
                     <li><a href="#stats">our advantages</a></li>
                     <li><a href="#choice">about us</a></li>
                     <li><a href="#contact-us">contact</a></li>
@@ -67,6 +67,25 @@
             </div>
         </header>
         <!-- end of header -->
+
+        <!-- modal -->
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3><b>Request </b> a Callback</h3>
+                <p>We can call you in 30 seconds, just enter your number.</p>
+
+                <form>
+                    <input type="text" class="input-field" placeholder="Name*" required>
+                    <br>
+                    <input type="tel" class="input-field" placeholder="Phone*" required>
+                    <br>
+                    <button type="submit" id="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- end of modal -->
 
         <!-- slider -->
         <div class="slideshow-container">
@@ -524,6 +543,20 @@
         }
     </script>
     <!-- end of google maps script -->
+
+    <!-- JQUERY CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- inline script -->
+    <!-- internal javascript -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.toggle').click(function() {
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+
 
 
 
