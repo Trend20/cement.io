@@ -111,38 +111,37 @@ function showError(event) {
     error.style.color = 'red';
 }
 
-
 // modal
-const modal = document.querySelector(".modal");
-const trigger = document.querySelector("#request");
-const closeButton = document.querySelector(".close-button");
+// const modal = document.querySelector(".modal");
+// const trigger = document.querySelector("#request");
+// const closeButton = document.querySelector(".close-button");
 
-function toggleModal() {
-    modal.classList.toggle("show-modal");
-}
+// function toggleModal() {
+//     modal.classList.toggle("show-modal");
+// }
 
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
-}
+// function windowOnClick(event) {
+//     if (event.target === modal) {
+//         toggleModal();
+//     }
+// }
 
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
+// trigger.addEventListener("click", toggleModal);
+// closeButton.addEventListener("click", toggleModal);
+// window.addEventListener("click", windowOnClick);
 
-// validate the input fields
-const inputFields = document.querySelectorAll('.input-field');
-const submitBtns = document.querySelectorAll('submit-btn');
+// // validate the input fields
+// const inputFields = document.querySelectorAll('.input-field');
+// const submitBtns = document.querySelectorAll('submit-btn');
 
-submitBtns.forEach((btn) => {
-    btn.addEventListener('click', showError);
+// submitBtns.forEach((btn) => {
+//     btn.addEventListener('click', showError);
 
-    function showError() {
-        inputFields.forEach((field) => {
-            if (field.value == "") {
-                alert('fill in the fields');
-            }
-        })
-    }
-});
+//     function showError() {
+//         inputFields.forEach((field) => {
+//             if (field.value == "") {
+//                 alert('fill in the fields');
+//             }
+//         })
+//     }
+// });
