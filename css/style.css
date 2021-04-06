@@ -1452,6 +1452,70 @@
         height: 260px;
     }
     
+    @media screen and (max-width:420px) {
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding: 30px 0px;
+            grid-gap: -10px;
+        }
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: 20px auto;
+        }
+        .image img {
+            width: 100%;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+        }
+        #g1 {
+            height: 300px;
+            margin-top: 0px;
+            width: 350px;
+        }
+        #g2 {
+            height: 300px;
+            margin-left: 0px;
+            width: 350px;
+            margin-top: 0px;
+        }
+        #g3 {
+            margin-left: 0px;
+            height: 300px;
+            width: 350px;
+            margin-top: 0px;
+        }
+        #g4 {
+            height: 300px;
+            width: 350px;
+            margin-top: 0px;
+        }
+        #g5 {
+            height: 300px;
+            margin-top: 0px;
+            width: 350px;
+        }
+        #g6 {
+            margin-top: 0px;
+            width: 350px;
+            height: 300px;
+        }
+        #g7 {
+            height: 300px;
+            width: 350px;
+            margin-top: 0px;
+        }
+        #g8 {
+            height: 300px;
+            width: 350px;
+        }
+    }
+    
     @media screen and (max-width:420px) {}
     /* end of gallery styles */
     /* team section styles */
@@ -1920,6 +1984,9 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 30px;
+        }
+        .footer-icons i {
+            padding: 10px;
         }
     }
     /* end of footer styles */
